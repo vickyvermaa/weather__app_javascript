@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+    <title>🤍weather__app | vicky__verma</title>
+</head>
+<body>
+    <div class="weather__box">
+        <div class="location">
+            <i class="fi fi-rr-marker location__icon"></i>
+            <div class="location__input" ondblclick="changeMode()">
+                <span class="location__name">Pune</span>
+            </div>
+        </div>
+        <div class="weather__report">
+            <h3>Today's reports:</h3>
+            <div class="weather__details">
+                <div class="weather__icon">
+                    <img src="icons/01d.png">
+                </div>
+                <span class="weather__scene"></span>
+                <h1 class="weather__deg"></h1>
+                <div class="weather__sub__details">
+                    <div class="weather__subs">
+                        <img src="icons/wind.png" alt="">
+                        <p class="wind__speed"></p>
+                        <p class="day"></p>
+                    </div>
+                    <div class="weather__subs">
+                        <img src="icons/humidity.png" alt="">
+                        <p class="humidity"></p>
+                        <p>humidity</p>
+                    </div>
+                    <div class="weather__subs">
+                        <img src="icons/rain.png" alt="">
+                        <p class="rain"></p>
+                        <p>Chance of rain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

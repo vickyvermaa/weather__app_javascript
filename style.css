@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #151638;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.weather__box{
+    padding: 15px;
+    width: 250px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0B0C1E;
+    border-radius: 25px;
+    text-align: center;
+}
+.location{
+    margin-bottom: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.location__icon{
+    color: #1C8ADB;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-right: 5px;
+}
+.location__name{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.weather__icon{
+    position: relative;
+    height: 180px;
+    z-index: 11;
+}
+.weather__icon::after,.weather__icon::before{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 0;
+    
+}
+.weather__icon::before{
+    top: 50px;
+    background-color: #FEF00A;
+}
+.weather__icon::after{
+    right: 20px;
+    top: 50px;
+    background-color: #408FA3;
+}
+.weather__icon img{
+    height: 100%;
+}
+.weather__scene{
+    display: block;
+    font-size: 14px;
+}
+.weather__deg{
+    font-size: 42px;
+}
+.weather__sub__details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.weather__subs{
+    margin: 0 10px;
+}
+.weather__subs img{
+    width: 50px;
+}
+.weather__subs p:nth-child(3){
+    font-size: 8px;
+}
